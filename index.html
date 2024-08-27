@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Palabras</title>
+    <link rel="stylesheet" href="styles.css" /> <!-- llamamos al archivo css-->
+    <style>   
+        #resultado{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container"><!--contenedor principal-->
+        <section>
+            <div id="logos" class="logo">
+                    <img src="img/logo.svg" alt="logo" id="logo">
+            </div>
+            <div class="cajaEncriptar"><!--Contenedor de texArea-->
+                <textarea 
+                id="txtArea"
+                class="textoArea"
+                value="" 
+                name="textoUno" 
+                cols="30" 
+                rows="10"
+                placeholder="Ingresa el texto aquí"
+                ></textarea>
+            </div>
+        
+            <div class="terminosyCondiciones"><!--contenedor terminos-->
+                <img src="img/Group.svg" alt="importante" id="imgInfo"> 
+                <label class="info" for="input-texto">Solo letras minúsculas,y sin acentos</label>
+            </div>
+        
+            <div class="btns"><!--contenedor btns-->
+                <button class="btnEncriptar" type="button" onclick="encriptarTexto()">Encriptar</button>
+                <button class="btnDesencriptar" type="button" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </section>
+
+        <div class="seccionResultado" id="seccionResultado">
+
+            <div id="contieneImagen" class="contIma">
+                <img src="img/imagen.jpg" alt="" id="imagen" />
+                <p id="parrafo" class=""><strong>Ningún mensaje fue encontrado</strong></p>
+                <p id="parrafoUno">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+
+            <div id="resultado" class="result">
+                <h2 id="mensaje3"> </h2>
+                    
+                        <textarea 
+                        id="txtArea2" 
+                        class="texto-copiar" 
+                        cols="30" 
+                        rows="10"
+                        ></textarea>
+
+                        <div class="btnsC">
+                        <h3 id="alerta"> </h3>
+                        <button class="btn-copiar" onclick="seleccionarCopiar()">Copiar</button>
+                        </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script> <!-- Agregamos el archivo javascript -->
+</html>

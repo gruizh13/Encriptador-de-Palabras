@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {/*Contenedro principal*/
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #f3f5fc;
+  }
+  
+  .logo {/*Logo alura*/
+    position: absolute;
+    width: 1%;
+    /*ancho*/
+    height: 35%;
+    /*altura*/
+    left: 4%;
+    /*izquierda*/
+    top: 4%;
+    /*arriba*/
+  }
+  
+  .textoArea {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+  }
+  
+  .textoArea::placeholder {
+    color: #0a3871;
+  }
+  
+  .textoArea:focus,
+  .textoArea:active {
+    border: none;
+    outline: none;
+  }
+  
+  .terminosyCondiciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 78%;
+  }
+  
+  .terminosyCondiciones label {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .btns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+  }
+  
+  
+  .btnEncriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  
+  .btnDesencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+  }
+  
+  .btnDesencriptar:hover,
+  .btn-copiar:hover,
+  .btnEncriptar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+  }
+  
+  
+  .seccionResultado {
+    /*parte de atras de la imagen y area de texto*/
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+  
+  .contIma {
+    /*contenedor imagen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 105%;
+    top: 55%;
+    text-align: center;
+    margin: -60% auto;
+  }
+  
+  
+  .contIma p {
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+  }
+  
+  
+  .contIma img {
+    position: relative;
+    width: 90%;
+    height: 340%;
+    top: 5%;
+    position: relative;
+    overflow: hidden;
+    margin: 0% auto;
+  }
+  
+  
+  .result textarea {
+    position: absolute;
+    width: 78%;
+    /*ancho*/
+    height: 55%;
+    /*altura*/
+    left: 12%;
+    /*izquierda*/
+    top: 10%;
+    /*arriba*/
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    /*tamaño letra del textarea*/
+    line-height: 150%;
+    background-color: #FFFFFF;
+  }
+  
+  .btnsC {
+    /* *textarea2*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 150%;
+    height: 30%;
+    left: 55%;
+    top: 88%;
+  
+  }
+  
+  
+  .btn-copiar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .texto-copiar {
+    position: absolute;
+    width: 142%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+  }
+  
+  .texto-copiar::placeholder {
+    color: #0a3871;
+  }
+  
+  
+  .texto-copiar:focus,
+  .texto-copiar:active {
+    border: none;
+    outline: none;
+  }
+  
+  
+  .btn-copiar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .btn-copiar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 57.5em) {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .cajaEncriptar {
+      width: 100%;
+    }
+  
+    .textoArea {
+      width: 80%;
+      height: 60%;
+      left: 10%;
+      top: 5%;
+    }
+  
+    .terminosyCondiciones {
+      width: 80%;
+      left: 10%;
+      top: 67%;
+    }
+  
+    .terminos img {
+      font-size: 16px;
+    }
+  
+    .btns {
+      width: 80%;
+      left: 10%;
+      top: 70%;
+    }
+  
+    .btnEncriptar,
+    .btnDesencriptar {
+      width: 48%;
+      border-radius: 16px;
+    }
+  
+    .btnEncriptar:hover,
+    .btnDesencriptar:hover {
+      margin: 0.3%;
+      width: 47.5%;
+      padding: 1.8%;
+    }
+  
+    .seccionResultado {
+      width: 80%;
+      height: 15%;
+      left: 10%;
+      top: 80%;
+    }
+  
+    .result {
+      width: 100%;
+      top: 5%;
+    }
+  
+    .contIma img {
+      top: 0;
+      display: none;
+      visibility: hidden;
+    }
+
+/*CELULAR*/
+
+.logo {
+    height: 3rem;
+  }
+    
+  
+  }
